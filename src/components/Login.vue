@@ -14,12 +14,12 @@
     </b-container>
 
       <div class=" form-group">
-        <label class="labelhelp"> Email*</label>
+        <label class="labelhelp label"> Email</label>
         <input type="text" class="  input form-control form-control-lg " />
       </div>
 
       <div class=" position-relative form-group">
-        <label class="labelhelp">Password*</label>
+        <label class="labelhelp label">Password</label>
         <input type="text" class=" input form-control form-control-lg" />
       </div>
 
@@ -39,7 +39,11 @@
 export default {
   data  () {
     return {
-      logo: require('@/assets/icons/logo.jpg')
+      logo: require('@/assets/icons/logo.jpg'),
+      user: require('@/assets/icons/ic_user.jpg.jpg'),
+      activeuser: require('@/assets/icons/ic_user_active.jpg.jpg'),
+      lock: require('@/assets/icons/ic_lock.jpg.jpg'),
+      activelock: require('@/assets/icons/ic_lock_active.jpg.jpg')
     }
   }
 }
