@@ -3,21 +3,26 @@
   <div class="vue-template">
     <b-container class="bv-example-row">
       <b-row>
+        <b-col class="mazaks">
           <p class="login-font">Login</p>
+          <hr class="underline">
+        </b-col>
         <b-col>
           <img :src="logo" class="Magebit-logo" alt="Magebit-logo">
         </b-col>
       </b-row>
     </b-container>
 
-      <div class="form-group">
-        <input type="email" class="form-control form-control-lg" />
+      <div class=" form-group">
+        <label class="labelhelp"> Email*</label>
+        <input type="text" class="  input form-control form-control-lg " />
       </div>
 
-      <div class="form-group">
-
-        <input type="password" class="form-control form-control-lg" />
+      <div class=" position-relative form-group">
+        <label class="labelhelp">Password*</label>
+        <input type="text" class=" input form-control form-control-lg" />
       </div>
+
   </div>
     <div class="row justify-content-between" style="margin-top: 30px;">
       <div class="col-4">
