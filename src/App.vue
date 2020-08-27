@@ -3,9 +3,7 @@
     <!-- Main -->
     <div class="App">
       <div class="vertical-center">
-        <div class="inner-block">
-          <router-view />
-        </div>
+        <router-view />
         <p class="Copyright">All Rights Reserved “Magebit” 2016.</p>
       </div>
     </div>
