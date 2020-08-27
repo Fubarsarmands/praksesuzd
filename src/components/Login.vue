@@ -1,9 +1,15 @@
 <template>
   <div clas="inner-block">
   <div class="vue-template">
-    <b-form>
-      <p class="login-font">Login</p>
-      <img :src="image" class="MB-logo" alt="MB-logo">
+    <b-container class="bv-example-row">
+      <b-row>
+          <p class="login-font">Login</p>
+        <b-col>
+          <img :src="logo" class="Magebit-logo" alt="Magebit-logo">
+        </b-col>
+      </b-row>
+    </b-container>
+
       <div class="form-group">
         <input type="email" class="form-control form-control-lg" />
       </div>
@@ -12,21 +18,24 @@
 
         <input type="password" class="form-control form-control-lg" />
       </div>
-
-      <button type="submit" class="btn btn-dark btn-lg btn-block">Login</button>
-
-      <p class="forgot-password text-right mt-2 mb-4">
-        <router-link to="/forgot-password">Forgot?</router-link>
-      </p>
-    </b-form>
-    </div>
   </div>
+    <div class="row justify-content-between" style="margin-top: 30px;">
+      <div class="col-4">
+        <b-button pill variant="orange" size="lg" type="submit">LOGIN</b-button>
+      </div>
+      <div class="col-4">
+        <b-button variant="link ColorGrey" type="button">Forgot?</b-button>
+      </div>
+      </div>
+    </div>
 </template>
 
 <script>
 export default {
   data  () {
-    return {}
+    return {
+      logo: require('@/assets/icons/logo.jpg')
+    }
   }
 }
 </script>
