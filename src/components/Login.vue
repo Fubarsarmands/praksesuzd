@@ -14,13 +14,15 @@
       <div class="  form-group">
         <label class="labelhelp label"> Email</label>
         <input type="text" class="  input form-control form-control-lg " />
-        <img :src="mail" class="fa icons1 " alt="icons1">
+        <img :src="mail" class="fa fa-lg position-absolute " alt="mail">
       </div>
 
-      <div class=" position-relative form-group">
+      <div class=" form-group">
         <label class="labelhelp label">Password</label>
         <input type="text" class=" input form-control form-control-lg" />
+        <img :src="lock" class="fa fa-lg position-absolute " alt="lock">
       </div>
+
       <div class="row justify-content-between" style="margin-top: 30px;">
         <div class="col-4">
           <b-button pill variant="orange" size="lg" type="submit">LOGIN</b-button>
